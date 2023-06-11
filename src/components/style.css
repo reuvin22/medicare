@@ -1,0 +1,516 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #173a66;
+}
+.nav {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15%;
+}
+.logo span {
+    color: #007BFF;
+}
+.navbar{
+    display: flex;
+    gap: 20px;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+.navbar a::after{
+    content: "";
+    display: block;
+    border: 1.5px solid var(--primary-color);
+    width: 0%;
+    transition: 0.3s;
+    visibility: hidden;
+}
+.navbar a:hover::after {
+    width: 100%;
+    visibility: visible;
+}
+.navContainer button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navContainer button:hover {
+    background-color: var(--secondary-color);
+}
+#home {
+    width: 100%;
+    height: 100vh;
+}
+.contentContainer {
+    margin-top: 4%;
+    width: 80%;
+    height: 300px;
+    margin-left: 11%;
+    display: flex;
+}
+.intro {
+    width: 50%;
+    height: 300px
+}
+.intro h1 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-top: 11% ;
+}
+.intro p{
+    margin-top: 7%;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+.pic {
+    width: 50%;
+    height: 300px;
+    display: flex;
+}
+.pic1 {
+    width: 500px;
+    height: 250px;
+    margin-left: 8%;
+    margin-top: 4.8%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.23);
+}
+.pic2 {
+    display: grid;
+    width: 100%;
+}
+.pic21 {
+    width: 90%;
+    height: 160px;
+    margin-top: 8.5%;
+    margin-left: 2%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.23);
+}
+.pic22 {
+    width: 210px;
+    height: 85px;
+    margin-left: 2%;
+    margin-top: -7%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.23);
+    display: flex;
+    overflow: hidden;
+}
+.year {
+    width: 40%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.year h1{
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+.texts {
+    display: flex;
+}
+.text {
+    display: grid;
+    place-items: center;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+.pic23 img{
+    height: 100%;
+}
+.pic21 {
+    width: 210px;
+}
+.pic21Upper {
+    display: flex;
+}
+.pic21Text {
+    display: grid;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.pic21Upper img {
+    height: 70px;
+    clip-path: circle();
+    margin-left: 11%;
+    margin-top: 5%;
+}
+.upperText {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.lowerText {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+.pic21Lower {
+    display: flex;
+    width: 210px;
+    margin-top: -5%;
+}
+.pic21Lower .btn {
+    margin-right: 5%;
+}
+.available {
+    margin-top: 13%;
+    font-size: 1rem;
+    margin-left: 5%;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.btn {
+    margin-top: 10%;
+    margin-left: 3%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.3s;
+    width: 80%;
+    
+}
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+.online {
+    display: flex;
+}
+.online p {
+    margin-top: 13%;
+    margin-left: 5%;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.online img {
+    height: 40px;
+    margin-left: 8%;
+    margin-top: 5%;
+}
+.pic1 h1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+.bar{
+    height: 133px;
+    width: 100%;
+    margin-top: -8%;
+}
+.doctorImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.doctorImage img{
+    width: 79%;
+    height: 500px;
+    border-radius: 10px;
+}
+#about {
+    height: 70vh;
+    width: 100%;
+}
+.basicInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.locations,
+.findDoctor{
+    box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.23);
+    padding: 10px 30px;
+    width: 28%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.appointments {
+    box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.23);
+    padding: 10px 30px;
+    width: 20%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.locations:hover,
+.findDoctor:hover,
+.appointments:hover {
+    transform: scale(1.05);
+}
+.picTitle {
+    display: flex;
+}
+.picTitle img {
+    height: 50px;
+}
+.picTitle h1 {
+    font-size: 1.2rem;
+    margin-left: 3%;
+    margin-top: 7%;
+}
+.appointments p,
+.locations p,
+.findDoctor p{
+    margin-top: 3%;
+}
+.textVid {
+    display: flex;
+}
+.vid video{
+    margin-top: 5%;
+    margin-left: 18%;
+    width: 70%;
+    height: 400px;
+}
+.facilities {
+    display: grid;
+    margin-top: 6%;
+    width: 33.5%;
+    height: 320px;
+}
+.facilities h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+.facilities h1{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+.facilities p{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.facilities h2 {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    opacity: 0.9;
+    text-align: justify;
+}
+.readMore {
+    background-color: var(--primary-color);
+    width: 35%;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.readMore:hover {
+    background-color: var(--secondary-color);
+}
+#service {
+    width: 100%;
+    height: 80vh;
+}
+.serviceIntroduction {
+    display: grid;
+    place-items: center;
+}
+.serviceIntroduction h1 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+.serviceP{
+    width: 40%;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+.services {
+    display: grid;
+    width: 78%;
+    height: 500px;
+    margin-top: 4%;
+}
+.services1,
+.services2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.hostService {
+    box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.23);
+    width: 30%;
+    height: 230px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 5px;
+}
+.hostService:hover {
+    transform: scale(1.05);
+}
+.content {
+    display: grid;
+}
+.content img{
+    height: 70px;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.content h1 {
+    font-size: 2.1rem;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+.content p {
+    margin-top: 2%;
+    font-size: 1.2rem;
+    margin-left: 3%;
+}
+#doctors {
+    height: 100vh;
+    width: 100%;
+}
+.doctorHeader{
+    display: grid;
+    place-items: center;
+}
+.doctorHeader h1{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+.doctorHeader p{
+    font-size: 1.3rem;
+    margin-top: 1%;
+    color: var(--secondary-color);
+}
+.lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listDoctors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 350px;
+    margin-top: 3%;
+}
+.doctorList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.doctor1 {
+    display: grid;
+    place-items: center;
+    box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.23);
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 20px 0px;
+    border-radius: 10px;
+}
+.doctor1 .doc {
+    height: 100px;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+}
+.logos {
+    display: flex;
+    gap: 20px;
+}
+.logos img {
+    height: 50px;
+}
+.logos .facebook {
+    height: 55px;
+}
+.doctor1:hover {
+    transform: scale(1.05);
+}
+@media screen and (max-width:950px){
+    .pic {
+        width: 70%;
+        margin-left: 5%;
+    }
+    .pic1 {
+        width: 500px;
+    }
+    .pic21Lower {
+        margin-top: -6%;
+    }
+    .doctorImage {
+        visibility: hidden;
+    }
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:768px){
+    #about {
+        margin-top: -48%;
+    }
+    .basicInfo {
+        width: 100%;
+    }
+    .appointments {
+        width: 30%;
+    }
+    .findDoctor {
+        width: 33%;
+    }
+    .facilities {
+        width: 60%;
+    }
+    .vid {
+        width: 1000px;
+    }
+   .readMore {
+    width: 50%;
+   }
+    .facilities h1 {
+        font-size: 1.5rem;
+    }
+    #service {
+        margin-top: 5%;
+    }
+    .services {
+        width: 100%;
+        margin-left: 5%;
+    }
+    #doctors {
+        margin-top: 10%;
+    }
+    .lists {
+        width: 10%;
+    }
+}
+@media screen and (max-width:600px) {
+
+}
