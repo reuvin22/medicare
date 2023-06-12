@@ -12,7 +12,6 @@ const Navbar = () => {
                         <a href="#about">About</a>
                         <a href="#service">Service</a>
                         <a href="#doctors">Doctors</a>
-                        <a href="#blog">Blog</a>
                         <a href="#contact">Contact</a>
                     </div>
                     <div className="appointment">
