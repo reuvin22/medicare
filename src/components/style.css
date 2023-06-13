@@ -389,7 +389,7 @@
     margin-left: 3%;
 }
 #doctors {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
 }
 .doctorHeader{
@@ -454,7 +454,7 @@
 .doctor1:hover {
     transform: scale(1.05);
 }
-@media screen and (max-width:950px){
+@media only  screen and (max-width:950px){
     .pic {
         width: 70%;
         margin-left: 5%;
@@ -472,7 +472,7 @@
         font-size: 2.5rem;
     }
 }
-@media screen and (max-width:768px){
+@media only screen and (max-width:768px){
     #about {
         margin-top: -48%;
     }
@@ -511,6 +511,94 @@
         width: 10%;
     }
 }
-@media screen and (max-width:600px) {
+@media only screen and (max-width:600px) {
 
+}
+#client {
+    height: 70vh;
+    width: 100%;
+}
+.clientContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.clientIntro {
+    width: 40%;
+    height: 300px;
+}
+.clientIntro h1 {
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+}
+.clientIntro p {
+    font-size: 1.5rem;
+    margin-top: 3%;
+}
+.clientIntro button {
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 3%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.clientIntro button:hover {
+    transform: scale(1.05);
+    background-color: var(--secondary-color);
+}
+.client1 {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-top: 20%;
+    background-color: var(--primary-color);
+    z-index: -1;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.client2 {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-top: -35%;
+    position: absolute;
+    background-color: var(--secondary-color);
+    z-index: -1;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.client1 img,
+.client2 img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid blue;
+}
+.client1 p,
+.client2 p{
+    text-align: justify;
+    width: 80%;
+    color: white;
+}
+.client1 h3,
+.client2 h3{
+    color: white;
+    margin-left: -55%;
+    margin-top: -2%;
+}
+.client1 h2,
+.client2 h2{
+    color: white;
+    margin-left: -44%;
+    margin-top: -2%;
 }

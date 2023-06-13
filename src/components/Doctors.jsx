@@ -7,17 +7,45 @@ import Doc4 from '../assets/dr2.jpg';
 import Socmed1 from '../assets/facebook.png';
 import Socmed2 from '../assets/twitter.png';
 import Socmed3 from '../assets/insta.png';
+import {motion} from 'framer-motion'
 
 const Doctors = () => {
     return (
         <>
             <section id="doctors">
                 <div className="doctorsIntro">
-                    <div className="doctorHeader">
+                    <motion.div className="doctorHeader"
+                      initial={{
+                        opacity: 0
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                    }}
+                    transition={{
+                        duration: 1,
+                        ease: 'easeInOut'
+                    }}
+                    viewport={{
+                        once: true
+                    }}  
+                    >
                         <h1>Our Doctors</h1>
                         <p>Expert physician specialist and caring clinical doctor</p>
-                    </div>
-                    <div className="lists">
+                    </motion.div>
+                    <motion.div className="lists" 
+                    initial={{
+                        opacity: 0,
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                    }}
+                    transition={{
+                        duration: 1,
+                        ease: 'easeInOut'
+                    }}
+                    viewport={{
+                        once: true
+                    }}>
                         <div className="listDoctors">
                             <div className="doctorList">
                                 <div className="doctor1">
@@ -66,7 +94,7 @@ const Doctors = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
         </>
